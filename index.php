@@ -35,7 +35,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
           <td><?= $i; ?></td>
           <td>
 
-            <a href="">Ubah</a> | <a href="hapus.php?id=<?= $value["id"]; ?>" onclick="return confirm('Anda yakin menghapus data ini?')">Hapus</a>
+            <a href="ubah.php?id=<?= $value["id"]; ?>">Ubah</a> | <a href="hapus.php?id=<?= $value["id"]; ?>" onclick="return confirm('Anda yakin menghapus data ini?')">Hapus</a>
           </td>
           <td>
             <img src="img/<?= $value["gambar"]; ?>" width="70" alt="">
@@ -49,7 +49,6 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
       <?php endforeach; ?>
     </table>
   </div>
-  <button>cek saja</button>
 </body>
 
 </html>
