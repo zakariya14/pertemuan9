@@ -34,6 +34,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
         <tr>
           <td><?= $i; ?></td>
           <td>
+
             <a href="">Ubah</a> | <a href="hapus.php?id=<?= $value["id"]; ?>" onclick="return confirm('Anda yakin menghapus data ini?')">Hapus</a>
           </td>
           <td>
