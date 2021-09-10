@@ -48,6 +48,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
       <?php endforeach; ?>
     </table>
   </div>
+  <button>cek saja</button>
 </body>
 
 </html>
