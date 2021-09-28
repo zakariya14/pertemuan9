@@ -18,8 +18,8 @@ function tambah($data)
 {
   global $conn;
   // ambil data dari tiap elemen form
-  $nim = htmlspecialchars($data["nim"]);
   $nama = htmlspecialchars($data["nama"]);
+  $nim = htmlspecialchars($data["nim"]);
   $email = htmlspecialchars($data["email"]);
   $jurusan = htmlspecialchars($data["jurusan"]);
 
@@ -31,7 +31,7 @@ function tambah($data)
 
   // query insert data
   $query = "INSERT INTO mahasiswa VALUES
-  ('', '$nim', '$nama', '$email', '$jurusan', '$gambar')";
+  ('', '$nama', '$nim', '$email', '$jurusan', '$gambar')";
   mysqli_query($conn, $query);
 
   return mysqli_affected_rows($conn);
@@ -97,8 +97,8 @@ function ubah($data)
   global $conn;
   // ambil data dari tiap elemen form
   $id = $data["id"];
-  $nim = htmlspecialchars($data["nim"]);
   $nama = htmlspecialchars($data["nama"]);
+  $nim = htmlspecialchars($data["nim"]);
   $email = htmlspecialchars($data["email"]);
   $jurusan = htmlspecialchars($data["jurusan"]);
   $gambarLama = htmlspecialchars($data["gambarLama"]);

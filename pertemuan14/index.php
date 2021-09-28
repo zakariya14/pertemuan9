@@ -40,8 +40,8 @@ if (isset($_POST["cari"])) {
         <th>No</th>
         <th>Aksi</th>
         <th>Gambar</th>
-        <th>NIM</th>
         <th>Nama</th>
+        <th>NIM</th>
         <th>Email</th>
         <th>Jurusan</th>
       </tr>
@@ -56,8 +56,8 @@ if (isset($_POST["cari"])) {
           <td>
             <img src="img/<?= $value["gambar"]; ?>" width="70" alt="">
           </td>
-          <td><?= $value["nim"]; ?></td>
           <td><?= $value["nama"]; ?></td>
+          <td><?= $value["nim"]; ?></td>
           <td><?= $value["email"]; ?></td>
           <td><?= $value["jurusan"]; ?></td>
         </tr>
